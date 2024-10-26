@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif; /* Set font */
+}
+
+body {
+    background-color: #f4f4f4; /* Light background for about page */
+    color: #333; /* Dark text for readability */
+}
+
+.container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center align content */
+    align-items: center; /* Center align vertically */
+    height: 100vh; /* Full height */
+    padding: 20px; /* Padding for content */
+}
+
+.about-content {
+    max-width: 600px; /* Limit max width */
+    text-align: center; /* Center text */
+}
+
+.about-content h1 {
+    font-size: 2.5em; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.about-content p {
+    font-size: 1.2em; /* Larger text */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* Add any additional styling as needed */

@@ -1,0 +1,43 @@
+/* Common prediction box styles for all components */
+.prediction-box {
+    background-color: hwb(0 22% 78%); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 80px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Heading styling */
+.prediction-box h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: s#adadbe; /* Blue color for headings */
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for paragraphs (forecasts, predictions, etc.) */
+.prediction-box p {
+    font-size: 1.2rem;
+    color:white;
+    margin: 0.5rem 0;
+}
+
+/* Smaller font for units, additional info */
+.prediction-box span {
+    font-size: 1.2rem;
+}
+
+/* Additional explanatory text */
+.prediction-box p:last-of-type {
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 10px;
+    max-width: 300px;
+}

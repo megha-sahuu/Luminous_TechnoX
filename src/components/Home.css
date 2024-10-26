@@ -1,0 +1,127 @@
+/* Base styles for a clean and modern look */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a modern and readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100vh;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: unset;
+    margin: 0 auto;
+  }
+  
+  /* Title section with user information */
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .titl{
+    color: #2c2c94;
+    font-size:xx-large;
+  }
+  .title span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .title span:last-child {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .title a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .title a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Prediction boxes section */
+  .prediction-boxes {
+    
+    display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .prediction-box {
+    background-color: #1c1b1b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: calc(33% - 2rem);
+    min-width: 250px; /* Ensure a minimum width for responsiveness */
+    transition: all 0.2s ease-in-out;
+    padding: 1.5rem;
+    height: 100%
+  }
+  
+  .prediction-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(37, 33, 33, 0.2);
+  }
+  
+  .prediction-title {
+    font-size: rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prediction-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .prediction-amount {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .prediction-trend {
+    font-size: 1rem;
+    color: #66ff66; /* Green for upward trend */
+  }
+  
+  .prediction-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Graph container section */
+  .graph-container {
+    width: 60%;
+    margin-top: 2rem;
+
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .prediction-boxes {
+      flex-direction: column;
+    }
+  
+    .prediction-box {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+  
+  .p{
+    color: #66ff66;
+  }

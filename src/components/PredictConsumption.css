@@ -1,0 +1,40 @@
+/* Prediction box styles for PredictConsumption */
+.predict-consumption {
+    background-color: #333; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 80px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Heading styling */
+.predict-consumption h4 {
+    font-size: 1.5rem; /* Match font size */
+    font-weight: bold;
+    color: #4a4cff; /* Same blue color */
+    margin-bottom: 0.5rem;
+}
+
+/* Remove any special background and font sizes around prediction */
+.predict-consumption p {
+    font-size: 1.2rem; /* Consistent font size with Predicted Tariff */
+    color: #e0e0e0; /* Same text color as Predicted Tariff */
+    margin: 0.5rem 0; /* Similar margin for spacing */
+    background-color: transparent; /* Remove any lighter background */
+    padding: 0;
+}
+
+/* Additional explanatory text styling */
+.predict-consumption p:last-of-type {
+    font-size: 0.9rem; /* Consistent small text */
+    color: #333; /* Light gray color for description */
+    margin-top: 10px;
+    max-width: 300px; /* Limit width like the first card */
+}

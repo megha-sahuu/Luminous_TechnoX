@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color for contrast */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    position: fixed; /* Fixed navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 1em;
+    z-index: 1000; /* Ensure the navbar is above other content */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+    display: flex; /* Horizontal list */
+    list-style: none; /* Remove default bullets */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav li {
+    margin: 0 20px; /* Spacing between items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: rgba(255, 255, 255, 0.7); /* Light color for links */
+    font-size: 1.2em;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+nav a:hover {
+    color: #20b2aa; /* Highlight color on hover */
+}
+
+nav li.active a {
+    color: #20b2aa; /* Highlight current page link */
+    font-weight: bold; /* Bold text for active page */
+}
+
+.main-container {
+    padding-top: 80px; /* Space for the fixed navbar */
+    padding: 2em; /* Additional padding */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0; /* Padding for footer */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for footer */
+    color: #fff; /* White text for footer */
+}
+
+section {
+    padding: 20px; /* Padding for sections */
 }
